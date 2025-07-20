@@ -31,13 +31,13 @@
     <div id="container">
 
         <form onsubmit="addNote(event)" id="form">
-            <textarea id="paper"></textarea>
+            <textarea id="paper" required></textarea>
             <br><br>
             <div class="panel">
                 <label>Due Date</label>
-                <input type="date" id="due-date">
+                <input type="date" id="due-date" required>
                 <label>Due Hour</label>
-                <input type="time" id="due-hour">
+                <input type="time" id="due-hour" required>
                 <br>
                 <button>Save Note</button>
 
