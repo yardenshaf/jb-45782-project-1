@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdV20.00zj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Indie+Flower&family=Playwrite+HU:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+
+
+</head>
+
+
+
+<body>
+    <h1>My Task Board</h1>
+
+
+    <div id="container">
+
+        <form onsubmit="addNote(event)" id="form">
+            <textarea id="paper"></textarea>
+            <br><br>
+            <div class="panel">
+                <label>Due Date</label>
+                <input type="date" id="due-date">
+                <label>Due Hour</label>
+                <input type="time" id="due-hour">
+                <br>
+                <button>Save Note</button>
+
+            </div>
+        </form>
+        <div id="buttons">
+            <button class="btn btn-primary" id="generate-button" onclick="generateRandomNote()">Generate A Random
+                Note!</button>
+            <button class='btn btn-danger' id="delete-all-button" onclick="deleteAll()">Delete All</button>
+            <button class="btn btn-warning" id="reset-button" onclick="clearForm()">Reset Form</button>
+
+
+        </div>
+        <div id="tasks">
+
+        </div>
+    </div>
+</body>
+
+</html>
